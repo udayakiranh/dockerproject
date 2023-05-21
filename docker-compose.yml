@@ -1,22 +1,22 @@
 version: "3"
 services:
   train:
-    image: udayakiranh/paytmtrain:latest
+    image: udayakiranh/paytmtrain
     ports: 
       -"80:80"
     replicas: 3
   movies:
-    image: udayakiranh/paytmmovies:latest
+    image: udayakiranh/paytmmovies
     ports: 
       -"81:80"
     replicas: 3
   dth:
-    image: udayakiranh/paytmdth:latest
+    image: udayakiranh/paytmdth
     ports: 
       -"82:80"
     replicas: 3
   recharge:
-    image: udayakiranh/paytmrecharge:latest
+    image: udayakiranh/paytmrecharge
     ports: 
       -"83:80"
     replicas: 3
