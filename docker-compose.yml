@@ -4,19 +4,23 @@ services:
     image: udayakiranh / paytmtrain:latest
     ports:
       - "80:80"
-    replicas: 3
+    deploy:
+      replicas: 3
   movies:
     image: udayakiranh / paytmmovies:latest
     ports:
       - "81:80"
-    replicas: 3
+    deploy:
+      replicas: 3
   dth:
     image: udayakiranh / paytmdth:latest
     ports:
       - "82:80"
-    replicas: 3
+    deploy:
+      replicas: 3
   recharge:
     image: udayakiranh / paytmrecharge:latest
     ports:
       - "83:80"
-    replicas: 3
+    deploy:
+      replicas: 3
